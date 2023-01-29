@@ -55,3 +55,9 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.blog-delete-btn {
+  color: #f1356d;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}

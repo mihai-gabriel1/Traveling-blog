@@ -18,15 +18,30 @@ const Home = () => {
     },
 
     {
-      title: "Cristal water in Spain.",
+      title: "Cristal water in Spain",
       body: "lorem ipsum...",
       author: "George",
       id: 3,
     },
   ]);
+
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
+
+  const handleDeleteAll = () => {
+    setBlogs([]);
+  };
+
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All blogs!" />
+      <BlogList
+        blogs={blogs}
+        title="All blogs!"
+        handleDelete={handleDelete}
+        handleDeleteAll={handleDeleteAll}
+      />
     </div>
   );
 };
