@@ -18,7 +18,7 @@ const Home = () => {
     },
 
     {
-      title: "Cristal water in Spain",
+      title: "Crystal water in Spain",
       body: "lorem ipsum...",
       author: "George",
       id: 3,

@@ -1,0 +1,24 @@
+{
+  "blogs": [
+    {
+      "title": "Trip to Thailand",
+      "body": "lorem ipsum...",
+      "author": "Mario",
+      "id": 1
+    },
+
+    {
+      "title": "Trip to Thailand",
+      "body": "lorem ipsum...",
+      "author": "Mario",
+      "id": 2
+    },
+
+    {
+      "title": "Trip to Thailand",
+      "body": "lorem ipsum...",
+      "author": "Mario",
+      "id": 3
+    }
+  ]
+}
