@@ -1,23 +1,23 @@
 {
   "blogs": [
     {
-      "title": "Trip to Thailanddd",
+      "title": "Trip to Thailand",
       "body": "lorem ipsum...",
       "author": "Mario",
       "id": 1
     },
 
     {
-      "title": "Trip to Thailand",
+      "title": "Crystal water in Greece",
       "body": "lorem ipsum...",
-      "author": "Mario",
+      "author": "Gabriel",
       "id": 2
     },
 
     {
-      "title": "Trip to Thailand",
+      "title": "One week in Tenerife",
       "body": "lorem ipsum...",
-      "author": "Mario",
+      "author": "John",
       "id": 3
     }
   ]
