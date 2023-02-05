@@ -6,24 +6,22 @@ const useFetch = (url) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch(url)
-        .then((res) => {
-          if (!res.ok) {
-            throw Error("Could not fetch the data for that resource.");
-          }
-          return res.json();
-        })
-        .then((data) => {
-          setData(data);
-          setIsPending(false);
-          setError(null);
-        })
-        .catch((err) => {
-          setError(err.message);
-          setIsPending(false);
-        });
-    }, 1000);
+    fetch(url)
+      .then((res) => {
+        if (!res.ok) {
+          throw Error("Could not fetch the data for that resource.");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setData(data);
+        setIsPending(false);
+        setError(null);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setIsPending(false);
+      });
   }, [url]);
 
   return { data, isPending, error };
