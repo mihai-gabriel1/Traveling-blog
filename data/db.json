@@ -19,6 +19,13 @@
       "body": "lorem ipsum...",
       "author": "John",
       "id": 3
+    },
+
+    {
+      "title": "Amazing times in Philipines",
+      "body": "lorem ipsum...",
+      "author": "Luigi",
+      "id": 3
     }
   ]
 }
