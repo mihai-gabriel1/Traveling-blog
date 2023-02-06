@@ -1,4 +1,4 @@
-# Dojo-blog
+# A blog where we document our escapes
 
 Live preview 🚀 - https://the-traveling-blog.netlify.app/
 
