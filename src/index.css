@@ -72,3 +72,7 @@
 .footer p {
   color: red;
 }
+
+.blog-preview a {
+  text-decoration: none;
+}
