@@ -2,28 +2,28 @@
   "blogs": [
     {
       "title": "Trip to Thailand",
-      "body": "lorem ipsum...",
+      "body": "The trip to Thailand was a unique and exciting experience. The country offers a perfect blend of scenic beauty, rich culture, and warm hospitality. During the trip, one can explore the pristine beaches, witness the beautiful Buddhist temples, indulge in delicious street food and experience the vibrant nightlife. Overall, the trip to Thailand is an unforgettable adventure.",
       "author": "Mario",
       "id": 1
     },
 
     {
       "title": "Crystal water in Greece",
-      "body": "lorem ipsum...",
+      "body": "A trip to Greece is a journey through a land rich in history and culture. From the ancient ruins of Athens to the stunning beaches of the Greek islands, this destination is perfect for travelers who are seeking adventure, relaxation, and a touch of history. Visitors can enjoy the local cuisine, relax in picturesque villages, and explore the birthplace of Western civilization. Whether you're a history buff or just looking to soak up the sun, a trip to Greece has something for everyone.",
       "author": "Gabriel",
       "id": 2
     },
 
     {
       "title": "One week in Tenerife",
-      "body": "lorem ipsum...",
+      "body": "Tenerife is one of the largest of the Canary Islands and is a popular holiday destination. It boasts stunning beaches, picturesque landscapes, and a lively nightlife scene. Visitors can take in the island's history and culture by visiting the famous landmarks such as Teide National Park and the charming town of La Laguna.",
       "author": "John",
       "id": 3
     },
 
     {
       "title": "Amazing times in Philipines",
-      "body": "lorem ipsum...",
+      "body": "The Philippines is a country made up of over 7,000 islands, each with its own unique culture and breathtaking landscapes. From the pristine beaches of Boracay to the towering Mayon Volcano, the Philippines offers an array of natural wonders to explore. The friendly locals, delicious food, and rich history make it a must-visit destination for those seeking an unforgettable experience in Southeast Asia.",
       "author": "Luigi",
       "id": 4
     }
