@@ -1,14 +1,30 @@
 import { useState } from "react";
 
 const Create = () => {
-  const [title, setTitle] = useState("title test");
-  const [content, setContent] = useState("content test");
-  const [author, setAuthor] = useState("author test");
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [author, setAuthor] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault(e);
+    const blog = { title, body, author };
+
+    fetch(
+      "https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/blogs",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(blog),
+      }
+    ).then(() => {
+      console.log("Blog has been added");
+    });
+  };
 
   return (
     <div className="create">
       <h2>Add a new blog</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Blog title:</label>
         <input
           type="text"
@@ -19,8 +35,8 @@ const Create = () => {
         <label>Blog content:</label>
         <textarea
           required
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
         ></textarea>
         <label>Blog author:</label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
