@@ -1,6 +1,10 @@
 const Footer = () => {
   const githubLogo = (
-    <a href="https://github.com/mihai-gabriel1" target="_blank">
+    <a
+      href="https://github.com/mihai-gabriel1"
+      target="_blank"
+      rel="noreferrer"
+    >
       <img
         src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
         alt="github.com logo"
