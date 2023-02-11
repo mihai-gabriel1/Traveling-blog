@@ -8,7 +8,8 @@ const BlogDetails = () => {
     error,
     isPending,
   } = useFetch(
-    "https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/blogs/" + id
+    "https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/blogs.json" +
+      id
   );
 
   return (
