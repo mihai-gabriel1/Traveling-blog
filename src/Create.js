@@ -10,7 +10,7 @@ const Create = () => {
     const blog = { title, body, author };
 
     fetch(
-      "https://traveling-blog-24f80-default-rtdb.europe-west1.firebasedatabase.app/blogs.json",
+      "https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/blogs/",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

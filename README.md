@@ -9,6 +9,7 @@ This is an interactive blog-website, with reusable components, that allow us to 
 ### Technologies used
 
 HTML, CSS, JAVASCRIPT and the React library.
+Firebase has been used to server as our rest api.
 
 #### Setup/Installation Overview
 
