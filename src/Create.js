@@ -9,14 +9,11 @@ const Create = () => {
     e.preventDefault(e);
     const blog = { title, body, author };
 
-    fetch(
-      "https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/blogs/",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(blog),
-      }
-    ).then(() => {
+    fetch("https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog),
+    }).then(() => {
       alert("Blog has been added.");
     });
   };
