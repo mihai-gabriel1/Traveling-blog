@@ -1,13 +1,18 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
+  const [isPending, setIsPending] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault(e);
+    // Prevents the blog from being refreshed after the entry has been created.
     const blog = { title, body, author };
+
+    setIsPending(true);
 
     fetch("https://my-json-server.typicode.com/mihai-gabriel1/demo-apidb/", {
       method: "POST",
@@ -15,6 +20,7 @@ const Create = () => {
       body: JSON.stringify(blog),
     }).then(() => {
       alert("Blog has been added.");
+      setIsPending(false);
     });
   };
 
@@ -42,7 +48,9 @@ const Create = () => {
           <option value="gabriel">Gabriel</option>
           <option value="john">John</option>
         </select>
-        <button>Add blog</button>
+
+        {!isPending && <button>Add blog</button>}
+        {isPending && <button disabled>Adding blog..</button>}
       </form>
     </div>
   );
