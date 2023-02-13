@@ -6,6 +6,7 @@ const Create = () => {
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("");
   const [isPending, setIsPending] = useState("");
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault(e);
@@ -21,6 +22,7 @@ const Create = () => {
     }).then(() => {
       alert("Blog has been added.");
       setIsPending(false);
+      history.push("/");
     });
   };
 
